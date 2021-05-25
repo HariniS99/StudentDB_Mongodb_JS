@@ -1,0 +1,44 @@
+
+<h3><a class="btn btn-secondary" href="/student">Create new    </a>Student List</h3>
+<h4><a class="btn btn-secondary" href="/student/list">View All</a></h4>
+<div class="container">
+<table class="table table-hover">
+    <thead>
+        <tr>
+            <th>StudentID</th>
+            <th>Full Name</th>
+            <th>Email</th>
+            <th>Mobile</th>
+            <th>City</th>
+            <th>State</th>
+            <th>Course</th>
+            <th>Subject1</th>
+            <th>Subject2</th>
+            <th>Subject3</th>
+           
+        </tr>
+    </thead>
+    <tbody>
+        {{#each list}}
+        <tr>
+            <td>{{this.stuid}}</td>
+            <td>{{this.fullname}}</td>
+            <td>{{this.email}}</td>
+            <td>{{this.mobile}}</td>
+            <td>{{this.city}}</td>
+            <td>{{this.state}}</td>
+            <td>{{this.course}}</td>
+            <td>{{this.mark1}}</td>
+            <td>{{this.mark2}}</td>
+            <td>{{this.mark3}}</td>
+            <td>
+                <a class="btn btn-primary btn-sm" href="/student/{{this.id}}">Edit</a>
+                <a class="btn btn-primary btn-sm" href="/student/delete/{{this.id}}"
+                onclick="return confirm('Are you sure want to delete this record?')">Delete</a>
+            </td>
+            
+        </tr>
+        {{/each}}
+    </tbody>
+</table>
+</div>
