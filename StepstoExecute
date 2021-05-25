@@ -1,0 +1,12 @@
+In the terminal of Visual Studio Code
+execute the following steps:
+--> 1.run npm install
+--> 2.run npm init
+--> 3.create index.js file
+--> 4.add packages in the index.js file
+--> 5.run npm install --save packages you mentioned in the index.js file
+--> 6.To run the file node filename.js
+--> 7.Ctrl+C - to return to node server
+
+
+NOTE: Step 3 and 4 if your creating your own code . If you are running the existing code you can skip this steps.
